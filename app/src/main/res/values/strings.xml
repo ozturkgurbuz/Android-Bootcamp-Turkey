@@ -1,0 +1,21 @@
+<resources>
+    <string name="appName">Harcamalar Uygulaması</string>
+    <string name="nextScreenText1">Karşınızda Harcama Takip Uygulaması</string>
+    <string name="nextScreenText2">Artık Karışıklığa Son</string>
+    <string name="nextScreen2Text1">Farklı Türlerde Kayıt Yapın</string>
+    <string name="nextScreen2Text2">Neye Harcama Yaptığınızı Takip Edin</string>
+    <string name="nextScreen3Text1">Dört Farklı Para Birimi Seçeneği</string>
+    <string name="nextScreen3Text2">₺ - $ - € - £ Para Birimleri İle Güncel Kur Takibi Yapın</string>
+    <string name="fatura">Fatura</string>
+    <string name="kira">Kira</string>
+    <string name="diger">Diğer</string>
+    <string name="TurkLiras">TL</string>
+    <string name="Dolar">Dolar</string>
+    <string name="Sterlin">Sterlin</string>
+    <string name="Euro">Euro</string>
+    <string name="radioButtonKadin">Kadın</string>
+    <string name="radioButtonErkek">Erkek</string>
+    <string name="radioButtonBelirtmekIstemiyorum">Belirtmek İstemiyorum</string>
+    <string name="bitir">Bitir</string>
+    <string name="next">Sonraki</string>
+</resources>

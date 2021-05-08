@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragments.ChangingUserFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.RecyclerViewKotlin.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBarChangingUser"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:popupTheme="@style/Theme.RecyclerViewKotlin.PopupOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="17dp"
+                    android:text="Kullanıcı İsim Değişikliği"
+                    android:textAlignment="center"
+                    android:textColor="#54000000" />
+            </FrameLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginRight="25dp"
+        android:hint="İsminizi Yazınız"
+
+        app:boxCornerRadiusBottomEnd="@dimen/radiousText"
+        app:boxCornerRadiusBottomStart="@dimen/radiousText"
+        app:boxCornerRadiusTopEnd="@dimen/radiousText"
+        app:boxCornerRadiusTopStart="@dimen/radiousText"
+        app:boxStrokeColor="@color/general"
+        app:hintTextColor="@color/general">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputeditTextName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupChangingUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButtonKadin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="@color/general"
+            android:text="@string/radioButtonKadin" />
+
+        <RadioButton
+            android:id="@+id/radioButtonErkek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="@color/general"
+            android:text="@string/radioButtonErkek" />
+
+        <RadioButton
+            android:id="@+id/radioButtonBelirtmekIstemiyorum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="@color/general"
+            android:text="@string/radioButtonBelirtmekIstemiyorum" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/general"
+        android:text="Kaydet"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:cornerRadius="15dp" />
+
+</LinearLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.MainFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textMerhaba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Merhaba"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textHarcama"
+                    android:layout_width="110dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Toplam Harcamanız"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textHarcamaTutar"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="3000TL"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/ChipGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:singleSelection="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipLira"
+                style="@style/CustomChipStyle"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:backgroundTint="@android:color/transparent"
+                android:text="TL"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:chipStrokeColor="@drawable/chipstrokecolor"
+                app:chipStrokeWidth="1dp"
+
+                app:chipSurfaceColor="#540E0D0D"
+
+
+                >
+
+            </com.google.android.material.chip.Chip>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipDolar"
+                style="@style/CustomChipStyle"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Dolar"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:chipStrokeColor="@drawable/chipstrokecolor"
+                app:chipStrokeWidth="1dp"
+                app:chipSurfaceColor="#540E0D0D" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSterlin"
+                style="@style/CustomChipStyle"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Sterlin"
+
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                app:chipStrokeColor="@drawable/chipstrokecolor"
+                app:chipStrokeWidth="1dp"
+                app:chipSurfaceColor="#540E0D0D"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipEuro"
+                style="@style/CustomChipStyle"
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Euro"
+                android:textAlignment="center"
+                android:textSize="18sp"
+
+                app:chipStrokeColor="@drawable/chipstrokecolor"
+                app:chipStrokeWidth="1dp"
+                app:chipSurfaceColor="#540E0D0D"
+                app:cornerRadius="15dp" />
+
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonEkle"
+        android:layout_width="74dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FF4107"
+        android:elegantTextHeight="false"
+        android:text="+"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        app:cornerRadius="20dp"
+        tools:ignore="RtlCompat" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="10dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp" />
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
