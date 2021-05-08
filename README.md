@@ -21,7 +21,7 @@ Dört farklı para birimi arasında tutar belirleme.
 +  Navigation
 
 
-## Uygulama dan ekran görüntüleri.
+## Uygulamadan ekran görüntüleri.
 
 Uygulama ilk kez çalıştığın da karşılama ekranı gelir sonrasında direk açılır.
 
